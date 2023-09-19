@@ -1,0 +1,8 @@
+- name: DHCP to Static
+  hosts: all
+  become: yes
+  gather_facts: true
+
+
+  roles:
+    - dhcp_to_static

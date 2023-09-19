@@ -1,0 +1,9 @@
+- name: Set static IP address
+  network:
+    state: present
+    interface: "{{interface}}"
+    ipv4: yes
+    address: "{{ static_ip_address }}"
+    netmask: "{{ static_netmask }}"
+    gateway: "{{ static_gateway }}"
+    dns_nameservers: "{{ static_dns_servers }}"
